@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="mediaquesries.css">
+ </head>
+ <body>
+   <nav id="desktop-nav">
+      <div class="logo">Olu Farinloye</div>
+      <div>
+        <ul class="nav-links">
+           <li><a href="#about">About</a></li>
+           <li><a href="#experience">Experience</a></li>
+           <li><a href="#projects">Projects</a></li>
+           <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Olu Farinloye</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+         <span></span>
+         <span></span>
+         <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <Section id="profile">
+       <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpeg" alt="Olu Farinloye profile picture">
+       </div>
+       <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title"> Olu Farinloye</h1>
+        <p class="section__text__p2">M365  Infrastructure Engineer - Azure, Intune/SCCM, MS Entra & Defender </p>
+        <div class="btn-container">
+            <button 
+            class="btn btn-color-2" 
+            onclick="window.open('./assets/resume-example.pdf')"
+            >
+            Download CV
+            </button>
+            <button 
+            class="btn btn-color-1" onclick="location.href='./#contact'">          
+             Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+          <img 
+            src="./assets/linkedin.png" 
+            alt="My Linkedin profile"
+            class="icon" 
+            onclick="location.href= 'https://www.linkedin.com/in/olutheeng/'"
+          />
+          <img 
+            src="./assets/github.png" 
+            alt="My Github profile"
+            class="icon" 
+            onclick="location.href= 'https://github.com/Olufarinloye'"
+          />
+       </div>
+    </Section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+     
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img 
+              src="./assets/experience.png" 
+              alt="Experiencce icon"
+              class="icon"
+            />
+            <h3>Experience & Expertise</h3>
+            <p>10+ years <br />Windows Infrastructure Engineer <br />PIM, RBAC and 
+              Conditional Access Policies<br />Intune/SCCM Co Mgt<br />Security and Compliance Mgt<br /> Scripting for deployments, 
+              reporting & automation<br />App packaging:exe, MSI, AppV, MSIX & FSLogix<br />Back-Up Tech: Veeam, Net Vault, MABS, 
+              Rubrik<br />ITIL SD Support: ServiceNow, Ivanti, HPOpenView, JIRA<br />Training, Education and Knowledge Transfer<br />Vendor & Stakeholder management</p>
+          </div>
+          <div class="details-container">
+            <img 
+            src="./assets/education.png" 
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education & Certification</h3>
+          <p>B.Sc. Business Mgt & IT<br />M Sc. International Marketing<br />ITIL ® v3 Foundation Certification<br />PRINCE2® 7 Foundation<br />JAMF Certified Associate 100
+            <br />MS500 - Security Administrator Associate<br />AZ500 - Azure Security Engineer Associate<br />SC900 - Security, Compliance, and Identity Fundamentals<br />MB910 & 920 - Dynamic 365 Fundamentals<br />AZ900 - Azure Fundamentals</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Hi, I'm Olu, an accomplished Microsoft Stack Infrastructure Engineer, with expertise in Azure AD, SCCM/Intune, and MS Entra. I am excited to explore opportunities as a Senior Windows Infrastructure Engineer - EUC, where I can leverage my skills to drive impactful digital transformations. 
+            I excel in evaluating technologies, implementing innovative solutions, and enhancing security. My role in delivering a comprehensive digital transformation program in a Health and Social Care organization, by improving data protection and compliance through the implementation of robust MFA and Conditional Access policies, stands as a testament to my capabilities. Over the last decade, I successfully evaluated and improved existing technologies, collaborated with stakeholders to understand their needs, and implemented strategic future proof solutions.
+            Extremely passionate about all thing’s technology, I leverage it to solve complex challenges. My belief is that technology should empower people and processes, not hinder them. Therefore, I follow a customer-centric approach with a cloud first mentality, dedicated to creating environments where security and compliance are paramount, and where end-users feel confident and supported. </p><br>
+
+          <p>Key Skills: 
+          Tech: Security and Compliance Administration, Intune MDM & MAM, Azure AD PIM Role Management, RBAC and Conditional Access Policies, App Packaging: (exe, MSI, AppV, MSIX) Deployment using Provisioning Packages, PowerShell Scripting, Back-Up Tech: (Veeam, Net Vault, MABS, Rubrik) and ITIL SD Support: (ServiceNow, Ivanti, HP-OpenView, JIRA)
+          Soft: Strategic and Scalability Planning, Requirements and Root Cause Analysis, Automation and solutions design, Vendor and Stakeholder management, Training, Education and Knowledge Transfer, Documentation, Feedback & UX Collection, Mindful of Industry Standards & Compliance e.g. ISO27001, GDPR. </p><br>
+
+          <p>Hobbies and Interests: 
+            I'd like to think my life is both flavourful and interesting. My interests blend harmoniously with the melodies of classical music, complemented with well-seasoned cooking and fine wine, as my Raspberry Pi projects offer a delightful 'byte' of sweetness to the wide array of offerings in the tech world. As an enthusiast for artificial intelligence, I consciously stay grounded with nature, remembering that the beauty of nature is the ultimate open-source platform. My interest and hobbies combine like a well-balanced scale, whether I'm scripting or cooking, I ensure the result isn't short of a masterpiece that is both technologically astute and aesthetically pleasing
+            </p><br
+          <p>Lastly, I bring to the table a wealth experience engaging stakeholders and a unique energy championing a collaborative approach, thereby enhancing organizational productivity, and fostering a culture of satisfaction among colleagues and users alike. 
+            Let's connect! Feel free to reach out to me at olu.farinloye@outlook.com to discuss how my skills and experience align with the needs of your team.
+            </p>
+          </div>
+        </div>
+      </Section>
+      <section id="contact">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p class="section__text__p1">Get in Touch</p><br>
+          
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+               src="./assets/email.png" 
+               alt="Email icon" 
+               class="icon contact-info-container"
+             />
+             <p><a href="mailto:Olu.farinloye@outlook.com">Olu.farinloye@outlook.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+               src="./assets/linkedin.png" 
+               alt="LinkedIn icon" 
+               class="icon contact-info-container"
+             />
+             <p><a href="https://www.linkedin.com/in/olutheeng/">LinkedIn</a></p>
+            </div>
+          </div>
+      </section>
+      <footer> 
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+             </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2024 Olu Farinloye. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+    </body>
+</html>
+                         
